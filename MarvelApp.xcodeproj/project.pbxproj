@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		4D95008A2703984E00D4FCE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500892703984E00D4FCE8 /* AppDelegate.swift */; };
 		4D95008C2703984E00D4FCE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95008B2703984E00D4FCE8 /* SceneDelegate.swift */; };
-		4D95008E2703984E00D4FCE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95008D2703984E00D4FCE8 /* ViewController.swift */; };
 		4D9500912703984E00D4FCE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D95008F2703984E00D4FCE8 /* Main.storyboard */; };
 		4D9500932703985400D4FCE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D9500922703985400D4FCE8 /* Assets.xcassets */; };
 		4D9500962703985400D4FCE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9500942703985400D4FCE8 /* LaunchScreen.storyboard */; };
+		4D9500A227039D9200D4FCE8 /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500A127039D9200D4FCE8 /* Heroes.swift */; };
+		4D9500A427039E6700D4FCE8 /* RequestNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500A327039E6700D4FCE8 /* RequestNetwork.swift */; };
+		4D9500A627039E7D00D4FCE8 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500A527039E7D00D4FCE8 /* ImageService.swift */; };
+		4D9500A827039E8E00D4FCE8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500A727039E8E00D4FCE8 /* DataManager.swift */; };
+		4D9500AA27039ED200D4FCE8 /* HeroesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500A927039ED200D4FCE8 /* HeroesListModel.swift */; };
+		4D9500AC27039EE100D4FCE8 /* HeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500AB27039EE100D4FCE8 /* HeroesListViewController.swift */; };
+		4D9500AF27039F0E00D4FCE8 /* HeroesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500AD27039F0E00D4FCE8 /* HeroesCollectionViewCell.swift */; };
+		4D9500B027039F0E00D4FCE8 /* HeroesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9500AE27039F0E00D4FCE8 /* HeroesCollectionViewCell.xib */; };
+		4D9500B32703A25E00D4FCE8 /* HeroesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500B22703A25E00D4FCE8 /* HeroesModel.swift */; };
+		4D9500B62703A3B700D4FCE8 /* exensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500B52703A3B700D4FCE8 /* exensionImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D9500862703984E00D4FCE8 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9500892703984E00D4FCE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D95008B2703984E00D4FCE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D95008D2703984E00D4FCE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D9500902703984E00D4FCE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D9500922703985400D4FCE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D9500952703985400D4FCE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D9500972703985400D4FCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D9500A127039D9200D4FCE8 /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
+		4D9500A327039E6700D4FCE8 /* RequestNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestNetwork.swift; sourceTree = "<group>"; };
+		4D9500A527039E7D00D4FCE8 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		4D9500A727039E8E00D4FCE8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4D9500A927039ED200D4FCE8 /* HeroesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListModel.swift; sourceTree = "<group>"; };
+		4D9500AB27039EE100D4FCE8 /* HeroesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewController.swift; sourceTree = "<group>"; };
+		4D9500AD27039F0E00D4FCE8 /* HeroesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D9500AE27039F0E00D4FCE8 /* HeroesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCollectionViewCell.xib; sourceTree = "<group>"; };
+		4D9500B22703A25E00D4FCE8 /* HeroesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesModel.swift; sourceTree = "<group>"; };
+		4D9500B52703A3B700D4FCE8 /* exensionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exensionImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,62 @@
 			children = (
 				4D9500892703984E00D4FCE8 /* AppDelegate.swift */,
 				4D95008B2703984E00D4FCE8 /* SceneDelegate.swift */,
-				4D95008D2703984E00D4FCE8 /* ViewController.swift */,
 				4D95008F2703984E00D4FCE8 /* Main.storyboard */,
 				4D9500922703985400D4FCE8 /* Assets.xcassets */,
+				4D9500B42703A3A700D4FCE8 /* extension */,
+				4D9500A027039D7600D4FCE8 /* Managers */,
+				4D95009F27039D6C00D4FCE8 /* Controllers */,
+				4D95009D27039D5800D4FCE8 /* Model */,
 				4D9500942703985400D4FCE8 /* LaunchScreen.storyboard */,
 				4D9500972703985400D4FCE8 /* Info.plist */,
 			);
 			path = MarvelApp;
+			sourceTree = "<group>";
+		};
+		4D95009D27039D5800D4FCE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D9500A127039D9200D4FCE8 /* Heroes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D95009F27039D6C00D4FCE8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D9500A927039ED200D4FCE8 /* HeroesListModel.swift */,
+				4D9500AB27039EE100D4FCE8 /* HeroesListViewController.swift */,
+				4D9500B127039F6900D4FCE8 /* Cell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D9500A027039D7600D4FCE8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4D9500A327039E6700D4FCE8 /* RequestNetwork.swift */,
+				4D9500A527039E7D00D4FCE8 /* ImageService.swift */,
+				4D9500A727039E8E00D4FCE8 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4D9500B127039F6900D4FCE8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D9500AD27039F0E00D4FCE8 /* HeroesCollectionViewCell.swift */,
+				4D9500B22703A25E00D4FCE8 /* HeroesModel.swift */,
+				4D9500AE27039F0E00D4FCE8 /* HeroesCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4D9500B42703A3A700D4FCE8 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D9500B52703A3B700D4FCE8 /* exensionImage.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +193,7 @@
 			files = (
 				4D9500962703985400D4FCE8 /* LaunchScreen.storyboard in Resources */,
 				4D9500932703985400D4FCE8 /* Assets.xcassets in Resources */,
+				4D9500B027039F0E00D4FCE8 /* HeroesCollectionViewCell.xib in Resources */,
 				4D9500912703984E00D4FCE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D95008E2703984E00D4FCE8 /* ViewController.swift in Sources */,
+				4D9500A227039D9200D4FCE8 /* Heroes.swift in Sources */,
+				4D9500B32703A25E00D4FCE8 /* HeroesModel.swift in Sources */,
+				4D9500AA27039ED200D4FCE8 /* HeroesListModel.swift in Sources */,
+				4D9500AC27039EE100D4FCE8 /* HeroesListViewController.swift in Sources */,
+				4D9500A827039E8E00D4FCE8 /* DataManager.swift in Sources */,
 				4D95008A2703984E00D4FCE8 /* AppDelegate.swift in Sources */,
+				4D9500B62703A3B700D4FCE8 /* exensionImage.swift in Sources */,
+				4D9500AF27039F0E00D4FCE8 /* HeroesCollectionViewCell.swift in Sources */,
+				4D9500A427039E6700D4FCE8 /* RequestNetwork.swift in Sources */,
+				4D9500A627039E7D00D4FCE8 /* ImageService.swift in Sources */,
 				4D95008C2703984E00D4FCE8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MarvelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MarvelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
