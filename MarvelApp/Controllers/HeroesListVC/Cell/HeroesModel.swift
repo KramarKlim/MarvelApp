@@ -21,7 +21,7 @@ class HeroesModel: HeroesModelProtocol {
     }
     
     func getImage() -> String {
-        return thum.path ?? "https://pbs.twimg.com/profile_images/1246149074132381697/GFKfka5v_400x400.jpg"
+        return thum.path ?? "https://image.freepik.com/free-vector/glitch-error-404-page_23-2148105404.jpg"
     }
     
     

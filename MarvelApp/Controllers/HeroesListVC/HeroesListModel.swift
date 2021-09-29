@@ -13,6 +13,7 @@ protocol HeroesListModelProtocol {
     func fetchRequestForHeroes(completion: @escaping () -> Void)
     func numberOfCell() -> Int
     func heroesModel(indexPath: IndexPath) -> HeroesModelProtocol?
+    func detailModel(indexPath: IndexPath) -> DetailModelProtocol?
 }
 
 class HeroesListModel: HeroesListModelProtocol {
@@ -32,5 +33,9 @@ class HeroesListModel: HeroesListModelProtocol {
     func heroesModel(indexPath: IndexPath) -> HeroesModelProtocol? {
         guard let hero = list[indexPath.row].thumbnail else { return nil }
         return HeroesModel(thum: hero)
+    }
+    
+    func detailModel(indexPath: IndexPath) -> DetailModelProtocol? {
+        return DetailModel(hero: list[indexPath.row])
     }
 }

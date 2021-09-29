@@ -15,4 +15,5 @@ struct Heroes: Codable {
 
 struct Thumbnail: Codable {
     let path: String?
+    let `extension`: String?
 }

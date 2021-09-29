@@ -22,6 +22,11 @@
 		4D9500B027039F0E00D4FCE8 /* HeroesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9500AE27039F0E00D4FCE8 /* HeroesCollectionViewCell.xib */; };
 		4D9500B32703A25E00D4FCE8 /* HeroesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500B22703A25E00D4FCE8 /* HeroesModel.swift */; };
 		4D9500B62703A3B700D4FCE8 /* exensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500B52703A3B700D4FCE8 /* exensionImage.swift */; };
+		4D9500BA27044A2B00D4FCE8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500B927044A2B00D4FCE8 /* DetailViewController.swift */; };
+		4D9500BE2704503C00D4FCE8 /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500BC2704503C00D4FCE8 /* ExploreCollectionViewCell.swift */; };
+		4D9500BF2704503C00D4FCE8 /* ExploreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9500BD2704503C00D4FCE8 /* ExploreCollectionViewCell.xib */; };
+		4D9500C12704524200D4FCE8 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500C02704524200D4FCE8 /* DetailModel.swift */; };
+		4D9500C32704524B00D4FCE8 /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9500C22704524B00D4FCE8 /* ExploreModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		4D9500AE27039F0E00D4FCE8 /* HeroesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCollectionViewCell.xib; sourceTree = "<group>"; };
 		4D9500B22703A25E00D4FCE8 /* HeroesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesModel.swift; sourceTree = "<group>"; };
 		4D9500B52703A3B700D4FCE8 /* exensionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exensionImage.swift; sourceTree = "<group>"; };
+		4D9500B927044A2B00D4FCE8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4D9500BC2704503C00D4FCE8 /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D9500BD2704503C00D4FCE8 /* ExploreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreCollectionViewCell.xib; sourceTree = "<group>"; };
+		4D9500C02704524200D4FCE8 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		4D9500C22704524B00D4FCE8 /* ExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,8 @@
 		4D95009F27039D6C00D4FCE8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4D9500A927039ED200D4FCE8 /* HeroesListModel.swift */,
-				4D9500AB27039EE100D4FCE8 /* HeroesListViewController.swift */,
-				4D9500B127039F6900D4FCE8 /* Cell */,
+				4D9500B827044A1900D4FCE8 /* DetailVC */,
+				4D9500B7270449FF00D4FCE8 /* HeroesListVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,6 +141,36 @@
 				4D9500B52703A3B700D4FCE8 /* exensionImage.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		4D9500B7270449FF00D4FCE8 /* HeroesListVC */ = {
+			isa = PBXGroup;
+			children = (
+				4D9500A927039ED200D4FCE8 /* HeroesListModel.swift */,
+				4D9500AB27039EE100D4FCE8 /* HeroesListViewController.swift */,
+				4D9500B127039F6900D4FCE8 /* Cell */,
+			);
+			path = HeroesListVC;
+			sourceTree = "<group>";
+		};
+		4D9500B827044A1900D4FCE8 /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				4D9500B927044A2B00D4FCE8 /* DetailViewController.swift */,
+				4D9500C02704524200D4FCE8 /* DetailModel.swift */,
+				4D9500BB2704502300D4FCE8 /* Cell */,
+			);
+			path = DetailVC;
+			sourceTree = "<group>";
+		};
+		4D9500BB2704502300D4FCE8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D9500BC2704503C00D4FCE8 /* ExploreCollectionViewCell.swift */,
+				4D9500C22704524B00D4FCE8 /* ExploreModel.swift */,
+				4D9500BD2704503C00D4FCE8 /* ExploreCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +232,7 @@
 			files = (
 				4D9500962703985400D4FCE8 /* LaunchScreen.storyboard in Resources */,
 				4D9500932703985400D4FCE8 /* Assets.xcassets in Resources */,
+				4D9500BF2704503C00D4FCE8 /* ExploreCollectionViewCell.xib in Resources */,
 				4D9500B027039F0E00D4FCE8 /* HeroesCollectionViewCell.xib in Resources */,
 				4D9500912703984E00D4FCE8 /* Main.storyboard in Resources */,
 			);
@@ -207,15 +247,19 @@
 			files = (
 				4D9500A227039D9200D4FCE8 /* Heroes.swift in Sources */,
 				4D9500B32703A25E00D4FCE8 /* HeroesModel.swift in Sources */,
+				4D9500C12704524200D4FCE8 /* DetailModel.swift in Sources */,
 				4D9500AA27039ED200D4FCE8 /* HeroesListModel.swift in Sources */,
+				4D9500BA27044A2B00D4FCE8 /* DetailViewController.swift in Sources */,
 				4D9500AC27039EE100D4FCE8 /* HeroesListViewController.swift in Sources */,
 				4D9500A827039E8E00D4FCE8 /* DataManager.swift in Sources */,
 				4D95008A2703984E00D4FCE8 /* AppDelegate.swift in Sources */,
 				4D9500B62703A3B700D4FCE8 /* exensionImage.swift in Sources */,
 				4D9500AF27039F0E00D4FCE8 /* HeroesCollectionViewCell.swift in Sources */,
+				4D9500C32704524B00D4FCE8 /* ExploreModel.swift in Sources */,
 				4D9500A427039E6700D4FCE8 /* RequestNetwork.swift in Sources */,
 				4D9500A627039E7D00D4FCE8 /* ImageService.swift in Sources */,
 				4D95008C2703984E00D4FCE8 /* SceneDelegate.swift in Sources */,
+				4D9500BE2704503C00D4FCE8 /* ExploreCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +408,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MarvelApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MarvelApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
