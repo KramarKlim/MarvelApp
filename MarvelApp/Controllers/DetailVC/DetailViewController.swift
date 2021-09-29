@@ -9,8 +9,10 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    //MARK: Public property
     var model: DetailModelProtocol!
     
+    //MARK: IBOUTLETS
     @IBOutlet var heroImage: UIImageView!
     @IBOutlet var descLabel: UILabel!
     @IBOutlet var exploreCollectionView: UICollectionView!
@@ -24,6 +26,7 @@ class DetailViewController: UIViewController {
         exploreCollectionView.dataSource = self
     }
     
+    //MARK: Private method
     private func setup() {
         heroImage.fetchImage(from: model.getImage() + ".jpg")
         descLabel.text = model.getDesc()
@@ -31,6 +34,7 @@ class DetailViewController: UIViewController {
     }
 }
 
+//MARK: UICollectionViewDelegate, UICollectionViewDataSource
 extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         10

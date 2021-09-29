@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A7V-Qt-WhD">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MARVEL-->
+        <!--Heroes List View Controller-->
         <scene sceneID="8VC-P4-OCc">
             <objects>
                 <viewController id="F5i-NJ-UpY" customClass="HeroesListViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U61-zW-5kt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p2K-zX-o63">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nGP-7h-zxI">
                                     <size key="itemSize" width="100" height="119"/>
@@ -44,13 +44,13 @@
                         <viewLayoutGuide key="safeArea" id="Nn4-ir-Usx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="p2K-zX-o63" firstAttribute="bottom" secondItem="Nn4-ir-Usx" secondAttribute="bottom" id="5ev-n2-h4D"/>
+                            <constraint firstAttribute="bottom" secondItem="p2K-zX-o63" secondAttribute="bottom" id="13m-WK-Tad"/>
                             <constraint firstItem="p2K-zX-o63" firstAttribute="top" secondItem="Nn4-ir-Usx" secondAttribute="top" id="RUi-DC-oa8"/>
                             <constraint firstItem="p2K-zX-o63" firstAttribute="leading" secondItem="Nn4-ir-Usx" secondAttribute="leading" id="tiO-Xq-hhX"/>
                             <constraint firstItem="p2K-zX-o63" firstAttribute="trailing" secondItem="Nn4-ir-Usx" secondAttribute="trailing" id="w3z-wT-rtN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MARVEL" id="a3d-kr-goL"/>
+                    <navigationItem key="navigationItem" id="a3d-kr-goL"/>
                     <connections>
                         <outlet property="allHeroesCollectionView" destination="p2K-zX-o63" id="aeH-vf-mfA"/>
                         <segue destination="lZG-Bg-CQn" kind="show" identifier="detail" id="ve0-CJ-9jB"/>
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaJ-8u-bEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2440.8000000000002" y="-117.39130434782609"/>
+            <point key="canvasLocation" x="2440.5797101449275" y="-117.85714285714285"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="wy1-AS-Dyv">
@@ -173,7 +173,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A7V-Qt-WhD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="G6O-zH-aXg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

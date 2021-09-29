@@ -9,8 +9,10 @@ import UIKit
 
 class HeroesListViewController: UIViewController {
 
+    //MARK: Public property
     var model: HeroesListModelProtocol!
-    @IBOutlet var searchBar: UISearchBar!
+    
+    //MARK: IBOutlets
     @IBOutlet var allHeroesCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -20,6 +22,14 @@ class HeroesListViewController: UIViewController {
         allHeroesCollectionView.delegate = self
         allHeroesCollectionView.dataSource = self
         getHeroes()
+        setupTitle()
+    }
+    
+    //MARK: Private methods
+    private func setupTitle() {
+        let logo = UIImage(named: "Vector")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
     }
     
     private func getHeroes() {
@@ -32,6 +42,7 @@ class HeroesListViewController: UIViewController {
     }
 }
 
+//MARK: UICollectionViewDelegate, UICollectionViewDataSource
 extension HeroesListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         model.numberOfCell()
