@@ -46,7 +46,13 @@ extension HeroesListViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         allHeroesCollectionView.deselectItem(at: indexPath, animated: true)
-        
-        
+        let detailModel = model.detailModel(indexPath: indexPath)
+        performSegue(withIdentifier: "detail", sender: detailModel)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailVC = segue.destination as! DetailViewController
+        detailVC.model = sender as? DetailModelProtocol
+        navigationItem.backButtonTitle = ""
     }
 }

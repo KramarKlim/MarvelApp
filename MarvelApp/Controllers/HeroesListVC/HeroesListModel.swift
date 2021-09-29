@@ -36,6 +36,6 @@ class HeroesListModel: HeroesListModelProtocol {
     }
     
     func detailModel(indexPath: IndexPath) -> DetailModelProtocol? {
-        return DetailModel(hero: list[indexPath.row])
+        return DetailModel(hero: list[indexPath.row], random: Set<Heroes>(list))
     }
 }

@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Heroes: Codable {
+struct Heroes: Codable, Hashable {
     let name: String?
     let description: String?
     let thumbnail: Thumbnail?
 }
 
-struct Thumbnail: Codable {
+struct Thumbnail: Codable, Hashable {
     let path: String?
     let `extension`: String?
 }
