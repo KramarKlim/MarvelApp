@@ -21,7 +21,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p2K-zX-o63">
                                 <rect key="frame" x="0.0" y="88" width="390" height="756"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nGP-7h-zxI">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="nGP-7h-zxI">
                                     <size key="itemSize" width="100" height="119"/>
                                     <size key="estimatedItemSize" width="116" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -30,13 +30,13 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="heroes" id="Dc9-Cu-7Ha" customClass="HeroesCollectionViewCell" customModule="MarvelApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="119"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="124.3" height="124.3"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LTn-LG-K1I">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="124.3" height="124.3"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="100" height="119"/>
+                                        <size key="customSize" width="124.3" height="124.3"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -63,7 +63,7 @@
         <!--Detail View Controller-->
         <scene sceneID="wy1-AS-Dyv">
             <objects>
-                <viewController id="lZG-Bg-CQn" customClass="DetailViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DetailViewController" storyboardIdentifier="DetailViewController" id="lZG-Bg-CQn" customClass="DetailViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zfr-N4-BDs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="857"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

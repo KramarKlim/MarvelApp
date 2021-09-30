@@ -47,11 +47,12 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        exploreCollectionView.deselectItem(at: indexPath, animated: true)
-//        let a = model.random[indexPath.row]
-//        exploreCollectionView.reloadData()
-//        descLabel.text = a.description ?? "Неизвестно"
-//        heroImage.fetchImage(from: a.thumbnail?.path ?? "" + ".jpg")
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        exploreCollectionView.deselectItem(at: indexPath, animated: true)
+        let call = exploreCollectionView.cellForItem(at: indexPath) as! ExploreCollectionViewCell
+        let new = model.random[indexPath.row]
+        descLabel.text = new.description
+        navigationItem.title = new.name
+        heroImage.image = call.heroImage.image
+    }
 }
