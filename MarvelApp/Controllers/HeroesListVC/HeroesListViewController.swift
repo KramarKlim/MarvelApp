@@ -65,5 +65,6 @@ extension HeroesListViewController: UICollectionViewDelegate, UICollectionViewDa
         let detailVC = segue.destination as! DetailViewController
         detailVC.model = sender as? DetailModelProtocol
         navigationItem.backButtonTitle = ""
+        navigationItem.backBarButtonItem?.tintColor = .white
     }
 }

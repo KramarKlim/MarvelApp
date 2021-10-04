@@ -14,6 +14,11 @@ class HeroesCollectionViewCell: UICollectionViewCell {
             heroImage.fetchImage(from: model.getImage() + ".jpg")
         }
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        heroImage.image = nil
+    }
 
     @IBOutlet var heroImage: UIImageView!
     

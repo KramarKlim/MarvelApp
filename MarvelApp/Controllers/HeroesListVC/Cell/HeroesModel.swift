@@ -23,6 +23,4 @@ class HeroesModel: HeroesModelProtocol {
     func getImage() -> String {
         return thum.path ?? "https://image.freepik.com/free-vector/glitch-error-404-page_23-2148105404.jpg"
     }
-    
-    
 }
