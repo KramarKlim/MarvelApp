@@ -37,7 +37,7 @@ class DetailViewController: UIViewController {
 //MARK: UICollectionViewDelegate, UICollectionViewDataSource
 extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        model.number()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

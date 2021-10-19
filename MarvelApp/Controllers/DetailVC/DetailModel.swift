@@ -17,6 +17,7 @@ protocol DetailModelProtocol {
     func getImage() -> String
     func getName() -> String
     func exploreModel(indexPath:IndexPath) -> ExploreModelProtocol?
+    func number() -> Int
 }
 
 class DetailModel: DetailModelProtocol {
@@ -44,5 +45,13 @@ class DetailModel: DetailModelProtocol {
     func exploreModel(indexPath: IndexPath) -> ExploreModelProtocol? {
         guard let thum = random[indexPath.row].thumbnail else { return nil }
         return ExploreModel(image: thum)
+    }
+    
+    func number() -> Int {
+        if random.count < 10 {
+            return random.count
+        } else {
+            return random[0...9].count
+        }
     }
 }

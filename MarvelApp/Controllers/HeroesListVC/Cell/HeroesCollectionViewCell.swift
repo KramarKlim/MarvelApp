@@ -11,7 +11,7 @@ class HeroesCollectionViewCell: UICollectionViewCell {
     
     var model: HeroesModelProtocol! {
         didSet {
-            heroImage.fetchImage(from: model.getImage() + ".jpg")
+            heroImage.fetchImage(from: model.getImage())
         }
     }
     

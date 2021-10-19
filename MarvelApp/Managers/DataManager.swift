@@ -14,4 +14,5 @@ class DataManager {
     private init() {}
     
     let url = "https://static.upstarts.work/tests/marvelgram/klsZdDg50j2.json"
+    let error = "https://image.freepik.com/free-vector/glitch-error-404-page_23-2148105404.jpg"
 }

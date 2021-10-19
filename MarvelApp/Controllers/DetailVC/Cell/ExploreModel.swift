@@ -23,7 +23,7 @@ class ExploreModel: ExploreModelProtocol {
     }
     
     func getImage() -> String {
-        return image.path ?? "Неизвестно"
+        return (image.path ?? DataManager.shared.error) + "." + (image.extension ?? DataManager.shared.error)
     }
     
     
