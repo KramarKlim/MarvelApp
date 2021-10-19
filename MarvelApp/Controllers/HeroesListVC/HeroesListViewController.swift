@@ -27,8 +27,9 @@ class HeroesListViewController: UIViewController {
     
     //MARK: Private methods
     private func setupTitle() {
-        let logo = UIImage(named: "Vector")
+        let logo = UIImage(named: "marvel")
         let imageView = UIImageView(image:logo)
+        imageView.contentMode = .scaleAspectFit
         self.navigationItem.titleView = imageView
     }
     
