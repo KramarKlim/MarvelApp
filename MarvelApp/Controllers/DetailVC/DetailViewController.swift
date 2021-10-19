@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
     
     //MARK: Private method
     private func setup() {
-        heroImage.fetchImage(from: model.getImage() + ".jpg")
+        heroImage.fetchImage(from: model.getImage())
         descLabel.text = model.getDesc()
         navigationItem.title = model.getName()
     }

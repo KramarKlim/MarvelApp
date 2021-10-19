@@ -35,7 +35,7 @@ class DetailModel: DetailModelProtocol {
     }
     
     func getImage() -> String {
-        hero.thumbnail?.path ?? "Неизвестно"
+        return (hero.thumbnail?.path ?? DataManager.shared.error) + "." + (hero.thumbnail?.extension ?? DataManager.shared.error)
     }
     
     func getName() -> String {
